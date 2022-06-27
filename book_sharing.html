@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Book Program Discussion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <div class="navibar">
+    <div class="left-nav">
+      <img src="books-stack-of-three.svg" alt="website logo" class="logo" />
+      <h2 class="custom-color name">
+        Book Program <br />
+        Discussion
+      </h2>
+    </div>
+
+    <div >
+      <a href="#home" class="custom-color">Home</a>
+      <a href="#about us" class="custom-color">About Us</a>
+      <a href="#news" class="custom-color">News</a>
+      <a href="#search" class="custom-color">Search</a>
+      <a class="login custom-background-color" href="#login">Login/Sign Up</a>
+    </div>
+
+
+  </div>
+  <!-- feature image -->
+  <div class="main_image" alt="An image of a spiral stair case">
+    <div class="message-1">
+      <h1 class="custom-color">The Idea</h1>
+      <p class="custom-color">
+        Book Discussion Scheme lends books and <br />
+        professionally prepared discussion notes to book groups.
+        <br /><br />Groups receive enough copies of their selected title
+        <br />
+        to allow everyone in the group <br />to read the same book at the same
+        time.
+      </p>
+    </div>
+    <div class="message-2">
+      <h1 class="custom-color">We Offer</h1>
+      <p class="custom-color">
+        We loan out sets of books to self-directed book groups. <br />We
+        courier books with discussion notes anywhere in NZ. <br /><br />
+        More than 1000 fiction & non-fiction titles to choose from. <br />Your
+        group reads and talks about the same book.
+      </p>
+    </div>
+    <div class="message-3">
+      <h1 class="custom-color">Get Involved</h1>
+      <p class="custom-color">
+        Meet new people... <br />Experience new and interesting reading
+        adventures... <br /><br />
+        Whatever the reason you want to be <br />part of a book group, we can
+        help.
+      </p>
+    </div>
+  </div>
+
+  <!-- Register button -->
+  <div id="button-space">
+    <button class="custom-background-color" id="trigger-modal">
+      Register Today
+    </button>
+  </div>
+
+
+
+  <!-- Recommended books -->
+  <div id="recommendation">
+    <div>
+      <div class="form-header">
+        <div class="line custom-background-color"></div>
+        <h2 class="custom-color inline-block">Recommendations</h2>
+        <div class="line custom-background-color"></div>
+
+      </div>
+      <div id="books-space">
+        <img class="rec-book book" id="book1" order="1" src="THE_BOOK_cover_image.png" alt="A book named The Book"/>
+        <p class="hidden" id="book1-text">The Book by M.clifford</p>
+        <div class="main-book">
+          <img class="rec-book book" id="book2" order="2" src="Unspeakable things.jpg" alt="A book named Unspeakable Things"/> <br>
+          <p id="book2-text" class="custom-color">Unspeakable Things by Jess Lourey</p>
+        </div>
+
+        <img class="rec-book book" id="book3" order="3" src="Autobiography_Book_Cover.png" alt="A book named Autobiography Book"/>
+        <p class="hidden" id="book3-text">Story Of Legend by Multan College</p>
+      </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="bookclubrego">
+      <div class="modal-content custom-background-color">
+        <!-- Image of the form -->
+        <img class="form-image" src="wendel-moretti.jpg" alt="someone holding a Van Gogh book"/>
+
+        <!-- Form content -->
+        <div>
+          <div class="form-header">
+            <div class="line black-background-color"></div>
+            <h2 class="name">Registration Form</h2>
+            <div class="line black-background-color"></div>
+
+          </div>
+          <form class="form">
+            <!-- User Details section -->
+            <div id="userDetails">
+              <p class="form-attr-name">
+                User Details
+              </p>
+              <div class="grid-container">
+                <label class="align-right">Given Name: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Given Name">
+              </div>
+              <br>
+              <div class="grid-container">
+                <label class="align-right">Surname: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Surname">
+              </div>
+              <br>
+              <div class="grid-container">
+                <label class="align-right">User Name: </label> <input type="text" id="fname" name="fname"
+                  placeholder="User Name">
+              </div>
+              <br>
+              <div class="grid-container">
+                <label class="align-right">Passord: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Password">
+              </div>
+            </div>
+            <br>
+            <br>
+            <!-- Address section -->
+
+            <div id="address">
+              <p class="form-attr-name">
+                Address
+              </p>
+              <div class="grid-container">
+                <label class="align-right">Home Address: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Home Address">
+              </div>
+              <br>
+              <div class="grid-container">
+                <label class="align-right">Work Address: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Work Address">
+              </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Contact section -->
+            <div id="contacts">
+              <p class="form-attr-name">
+                Contact
+              </p>
+              <div class="grid-container">
+                <label class="align-right">Mobile: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Mobile">
+              </div>
+              <br>
+              <div class="grid-container">
+                <label class="align-right">Email: </label> <input type="text" id="fname" name="fname"
+                  placeholder="Email">
+              </div>
+            </div>
+            <br>
+            <button class="custom-color black-background-color" id="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+        <button class="close custom-background-color">&times;</button>
+      </div>
+
+      <script>
+        // Get the registration form
+        var modal = document.getElementById("bookclubrego");
+
+        // Get the button that opens the form
+        var btn = document.getElementById("trigger-modal");
+
+        // Get the <span> element that closes the form
+        var span = document.getElementsByClassName("close")[0];
+
+        var submit = document.getElementById("submit");
+
+        // When the user clicks on the button, open the form
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the form
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        // When the user clicks on submit button, close the form
+        submit.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the form, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+
+        // Automatic Slideshow - change image every 4 seconds
+        carousel();
+
+        function carousel() {
+          var i;
+          // get the current book covers
+          var x = document.getElementsByClassName("book");
+          var book1Image = document.getElementById("book1").src;
+          var book1Text = document.getElementById("book1-text").innerHTML;
+          var book2Image = document.getElementById("book2").src;
+          var book2Text = document.getElementById("book2-text").innerHTML;
+          var book3Image = document.getElementById("book3").src;
+          var book3Text = document.getElementById("book3-text").innerHTML;
+
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+
+          // change the book covers
+          document.getElementById("book1").src = book2Image;
+          document.getElementById("book1-text").innerHTML = book2Text;
+          document.getElementById("book2").src = book3Image;
+          document.getElementById("book2-text").innerHTML = book3Text;
+          document.getElementById("book3").src = book1Image;
+          document.getElementById("book3-text").innerHTML = book1Text;
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+          }
+          setTimeout(carousel, 4000);
+        }
+      </script>
+</body>
+
+</html>
